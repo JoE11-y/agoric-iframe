@@ -6,6 +6,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'agoric-sandbox.[contenthash].js',
+    // Use relative path for local dev, will work with jsDelivr too
+    publicPath: './',
     clean: true,
   },
   module: {
